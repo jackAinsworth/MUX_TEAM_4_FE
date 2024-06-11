@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'myHealthApp',
+  appId: 'com.runforrecht.app',
+  appName: 'Run4RechtApp',
   webDir: 'www',
   cordova: {
     preferences: {
