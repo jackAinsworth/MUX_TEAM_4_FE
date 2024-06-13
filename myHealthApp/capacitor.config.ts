@@ -12,9 +12,10 @@ const config: CapacitorConfig = {
       FadeSplashScreenDuration: '300',
       SplashShowOnlyFirstTime: 'false',
       SplashScreen: 'screen',
-      SplashScreenDelay: '3000'
-    }
-  }
+      SplashScreenDelay: '3000',
+    },
+  },
+  includePlugins: ["cordova-plugin-health"]
 };
 
 export default config;
