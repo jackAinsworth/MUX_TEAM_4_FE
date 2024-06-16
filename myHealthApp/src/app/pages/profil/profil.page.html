@@ -1,0 +1,45 @@
+<div class="home">Profil</div>
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" size-md="8">
+        <ion-item lines="none">
+          <ion-label position="stacked">Tagesziel</ion-label>
+          <ion-input type="number" [(ngModel)]="stepGoal" min="0"></ion-input>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label position="stacked">Körpergröße</ion-label>
+          <ion-input type="number" [(ngModel)]="height" min="0" max="300"></ion-input>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label position="stacked">Schrittlänge</ion-label>
+          <ion-input type="number" [(ngModel)]="stepLength" min="0" max="300"></ion-input>
+        </ion-item>
+
+
+
+        <div class="home">Einstellungen</div>
+        <div class="notification-item">
+          <ion-icon name="notifications-outline" class="icon"></ion-icon>
+          <ion-label class="label-text">Benachrichtigungen</ion-label>
+          <ion-toggle slot="end" [(ngModel)]="notificationsEnabled"></ion-toggle>
+          <br /><br />
+        </div>
+        <div class="notification-item">
+          <ion-icon name="sunny-outline" class="icon"></ion-icon>
+          <ion-label class="label-text">Nachtmodus</ion-label>
+          <ion-toggle slot="end" [(ngModel)]="nightModeEnabled"></ion-toggle>
+          <br /><br />
+        </div>
+        <div class="notification-item">
+          <ion-icon name="reader-outline" class="icon"></ion-icon>
+          <ion-label class="label-text">Manager-Ansicht</ion-label>
+          <ion-toggle slot="end" [(ngModel)]="managerViewEnabled"></ion-toggle>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
