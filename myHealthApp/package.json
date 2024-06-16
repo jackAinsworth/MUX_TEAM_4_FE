@@ -21,22 +21,20 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@awesome-cordova-plugins/core": "^6.7.0",
+    "@awesome-cordova-plugins/health": "^6.7.0",
+    "@awesome-cordova-plugins/wonderpush": "^6.7.0",
+    "@capacitor/android": "6.0.0",
     "@capacitor/app": "6.0.0",
     "@capacitor/core": "6.0.0",
     "@capacitor/haptics": "6.0.0",
     "@capacitor/keyboard": "6.0.0",
     "@capacitor/status-bar": "6.0.0",
-    "@ionic-native/core": "^5.36.0",
-    "@ionic-native/health": "^5.36.0",
-    "@ionic-native/local-notifications": "^5.36.0",
-    "@ionic-native/pedometer": "^5.36.0",
     "@ionic/angular": "^8.0.0",
     "chart.js": "^4.4.3",
     "cordova-plugin-health": "^3.1.1",
-    "cordova-plugin-local-notifications": "^1.0.0",
-    "cordova-plugin-pedometer": "^0.4.1",
     "ionicons": "^7.0.0",
-    "rxjs": "~7.8.0",
+    "rxjs": "^7.8.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },
@@ -67,7 +65,16 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "plugin": "^0.3.3",
     "typescript": "~5.4.0"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-health": {
+        "HEALTH_READ_PERMISSION": "App needs read access",
+        "HEALTH_WRITE_PERMISSION": "App needs write access"
+      }
+    }
+  }
 }
