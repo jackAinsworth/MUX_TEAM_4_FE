@@ -21,14 +21,12 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
-    "@awesome-cordova-plugins/core": "^6.7.0",
-    "@awesome-cordova-plugins/health": "^6.7.0",
-    "@awesome-cordova-plugins/wonderpush": "^6.7.0",
-    "@capacitor/android": "6.0.0",
+    "@capacitor/android": "^6.1.0",
     "@capacitor/app": "6.0.0",
-    "@capacitor/core": "6.0.0",
+    "@capacitor/core": "^6.1.0",
     "@capacitor/haptics": "6.0.0",
     "@capacitor/keyboard": "6.0.0",
+    "@capacitor/local-notifications": "^6.0.0",
     "@capacitor/status-bar": "6.0.0",
     "@ionic/angular": "^8.0.0",
     "cordova-plugin-health": "^3.1.1",
@@ -47,11 +45,16 @@
     "@angular/cli": "^18.0.0",
     "@angular/compiler-cli": "^18.0.0",
     "@angular/language-service": "^18.0.0",
-    "@capacitor/cli": "6.0.0",
+    "@capacitor/cli": "^6.1.0",
     "@ionic/angular-toolkit": "^11.0.1",
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "cordova-android": "^13.0.0",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^5.0.0",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.2.1",
@@ -72,7 +75,14 @@
       "cordova-plugin-health": {
         "HEALTH_READ_PERMISSION": "App needs read access",
         "HEALTH_WRITE_PERMISSION": "App needs write access"
-      }
-    }
+      },
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
   }
 }

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Platform} from "@ionic/angular";
-import { Health } from '@awesome-cordova-plugins/health/ngx';
+import {LocalNotifications} from "@capacitor/local-notifications";
 
 @Component({
   selector: 'app-tab1',
@@ -18,4 +18,5 @@ export class Tab1Page implements OnInit{
     });
   }
 
+  protected readonly LocalNotifications = LocalNotifications;
 }

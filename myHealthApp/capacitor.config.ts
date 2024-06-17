@@ -15,6 +15,13 @@ const config: CapacitorConfig = {
       SplashScreenDelay: '3000',
     },
   },
+  plugins: {
+    LocalNotifications: {
+      smallIcon: 'ic_notification',
+      iconColor: '#488AFF',
+      sound: 'beep.wav',
+    },
+  },
   includePlugins: ["cordova-plugin-health"]
 };
 
