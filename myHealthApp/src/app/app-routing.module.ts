@@ -32,6 +32,10 @@ const routes: Routes = [
       {
         path: 'profil',
         loadChildren: () => import('./pages/profil/profil.module').then(m => m.ProfilPageModule)
+      },
+      {
+        path: 'home-manager',
+        loadChildren: () => import('./pages/home-manager/home-manager.module').then( m => m.HomeManagerPageModule)
       }
     ]
   },
@@ -39,10 +43,6 @@ const routes: Routes = [
     path: '**', // Gérer les routes inconnues (404)
     redirectTo: '',
     pathMatch: 'full'
-  },
-  {
-    path: 'profil',
-    loadChildren: () => import('./pages/profil/profil.module').then( m => m.ProfilPageModule)
   }
 
 ];
