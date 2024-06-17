@@ -3,10 +3,27 @@
   <ion-grid>
     <ion-row class="ion-justify-content-center">
       <ion-col size="12" size-md="8">
-        <ion-item lines="none">
-          <ion-label position="stacked">Tagesziel</ion-label>
-          <ion-input type="number" [(ngModel)]="stepGoal" min="0"></ion-input>
+        <ion-item lines="none" class="line">
+          <ion-grid>
+            <ion-row class="ion-align-items-center">
+              <ion-col size="auto">
+                <ion-label class="tag">Tagesziel</ion-label>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="outline" class="klein" shape="round">
+                  <div class="icon-button">
+                    <ion-icon slot="start" name="remove-circle-outline"></ion-icon>
+                  </div>
+                  <ion-input type="number" [(ngModel)]="stepGoal" min="0"></ion-input>
+                  <div class="icon-button">
+                    <ion-icon slot="end" name="add-circle-outline"></ion-icon>
+                  </div>
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
         </ion-item>
+        <p>Anzahl der Schritte auf dem Homescreen</p>       
 
         <ion-item lines="none">
           <ion-label position="stacked">Körpergröße</ion-label>
