@@ -36,6 +36,10 @@ const routes: Routes = [
       {
         path: 'home-manager',
         loadChildren: () => import('./pages/home-manager/home-manager.module').then( m => m.HomeManagerPageModule)
+      },
+      {
+        path: 'rangliste-manager',
+        loadChildren: () => import('./pages/rangliste-manager/rangliste-manager.module').then( m => m.RanglisteManagerPageModule)
       }
     ]
   },
