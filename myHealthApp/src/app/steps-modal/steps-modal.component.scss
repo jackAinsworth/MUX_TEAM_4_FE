@@ -29,11 +29,57 @@
   ion-input{
     margin-top: 10px;
     width: 50%;
-    margin-left: 25%;
+    margin-left: 30%;
   }
 
-  ion-button{
+  ion-button::part(native){
     text-transform: initial;
   }
 
+.tiret{
+  font-size: 2em;
+  color: #0b1463;
+  margin-top: 12px;
+}
+  ion-datetime-button::part(native) {
+    color: #0b1463;
+    --border-width: 0 !important; 
+    background-color: transparent !important;
+    margin-left: -8px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Aligne les boutons à gauche et à droite de l'écran */
+    padding: 0 20px; /* Ajoute un espace de 20px à gauche et à droite des boutons */
+    margin-top: 10px;
+  }
+  
+  .left-button, .right-button {
+    flex: 1; /* Les boutons occupent chacun 50% de l'espace disponible */
+    margin: 0 50px; /* Marge à gauche et à droite des boutons */
+    max-width: calc(50% - 20px); /* Limite la largeur pour éviter le chevauchement */
+  }
+  
+  
+  .ion-rounded {
+    --border-radius: 10px; /* Définit le rayon de bordure pour les boutons */
+    width: 150px;
+  }
+  .rounded{
+    --border-radius: 10px;
+    width: 150px;
+    --border-color: #0b1463;
+    --border-width: 2px;
+  }
+
+  .custom-button {
+    white-space: nowrap;
+  }
+
+  ion-icon{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
   
