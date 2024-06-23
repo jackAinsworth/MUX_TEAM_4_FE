@@ -12,10 +12,11 @@ import {HealthService} from "./health.service";
 // Import Ionic Native Plugins
 import {Health} from '@ionic-native/health/ngx';
 import { TabsPage } from './tabs/tabs.page';
+import { NumberFormatPipe } from './number-format.pipe';
 
 
 @NgModule({
-  declarations: [AppComponent, StepsModalComponent, TabsPage],
+  declarations: [AppComponent, StepsModalComponent, TabsPage, NumberFormatPipe],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,  FormsModule, ReactiveFormsModule,],
   providers: [
     HealthService,

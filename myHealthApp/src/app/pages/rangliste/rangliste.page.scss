@@ -6,6 +6,10 @@
     text-align: center;
     margin-bottom: 25px;
 }
+.position{
+  --background: #1e612b;
+  --background-size: cover;
+}
 
 .wochen {
     display: flex;
@@ -39,6 +43,8 @@
   ion-list {
     margin-top: 20px;
     font-size: 3em;
+    margin-left: -19px;
+    margin-right: -20px;
   }
   
   ion-item {
